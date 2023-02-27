@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./script.js"></script>
+
+</head>
+<body>
+    <center>
+        <div class="calculator border border-2 border-dark mt-5" style="width: 350px;height: 550px;">
+            <div class="calc">
+                <div><h1 class="mt-1 ps-5">CASIO</h1></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div><input type="text" readonly class="mt-2" style="float:right;background-color: rgb(31, 73, 52);width: 100px; "></div>
+            </div>
+            <hr>
+            <div class="text">
+                <input type="text" readonly id="result" style="width: 300px; height: 60px; background-color: rgb(49, 71, 48);border-radius: 10px;">
+              </div>
+              <br><br>
+              <button style="width: 50px;height: 40px;" id="off" onclick="clearbox()">OFF</button>
+              <button style="width: 50px;height: 40px;" id="mrc" onclick="recallMemory()">MRC</button>
+              <button style="width: 50px;height: 40px;" id="m-" onclick="subtractMemory()">M-</button>
+              <button style="width: 50px;height: 40px;" id="m+" onclick="addMemory()">M+</button>
+              <button style="width: 50px;height: 40px;" id="/" onclick="displaynumber('/')"><i class="fa-solid fa-divide"></i></button>
+              <br><br>
+              <button style="width: 50px;height: 40px;" id="%" onclick="calculatePercentage()">%</button>
+              <button style="width: 50px;height: 40px;" id="seven" onclick="displaynumber(7)">7</button>
+              <button style="width: 50px;height: 40px;" id="eight"onclick="displaynumber(8)">8</button>
+              <button style="width: 50px;height: 40px;" id="nine"onclick="displaynumber(9)">9</button>
+              <button style="width: 50px;height: 40px;" id="x" onclick="displaynumber('*')">x</button>
+              <br><br>
+              <button style="width: 50px;height: 40px;" id="root" onclick="squareroot('&#8730')">&#8730</button>
+              <button style="width: 50px;height: 40px;" id="four" onclick="displaynumber(4)">4</button>
+              <button style="width: 50px;height: 40px;" id="five" onclick="displaynumber(5)">5</button>
+              <button style="width: 50px;height: 40px;" id="six" onclick="displaynumber(6)">6</button>
+              <button style="width: 50px;height: 40px;" id="minus" onclick="displaynumber('-')">-</button>
+              <br><br>
+              <div class="as">
+                <div>
+                <button style="width: 50px;height: 40px;" id="clear" onclick="removelastitem()">C</button>
+                <button style="width: 50px;height: 40px;" id="one" onclick="displaynumber(1)">1</button>
+                <button style="width: 50px;height: 40px;" id="two" onclick="displaynumber(2)">2</button>
+                <button style="width: 50px;height: 40px;" id="three" onclick="displaynumber(3)">3</button>
+                <br><br>
+                <button style="width: 50px;height: 40px;" id="ac" onclick="clearbox()">AC</button>
+                <button style="width: 50px;height: 40px;" id="zero" onclick="displaynumber(0)">0</button>
+                <button style="width: 50px;height: 40px;" id="." onclick="displaynumber('.')">.</button>
+                <button style="width: 50px;height: 40px;" id="equal" onclick="evaluateexpression()">=</button>
+                </div>
+                &nbsp;
+                <div >
+                    <button style="width: 50px;height: 105px;" id="plus" onclick="displaynumber('+')">+</button>
+                </div>
+
+            </div>
+              
+    
+        
+        </div>
+    </center>
+    
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+.calc{
+    display: flex;
+    
+}
+.calc h1{
+    color: rgb(226, 223, 223);
+}
+.calculator{
+    background-color: rgb(58, 55, 55);
+    border-radius: 15px 15px 10px 10px;
+    box-shadow: 5px 5px 5px;
+}
+.as{
+    display: flex;
+    margin-left: 39px;
+}
+button{
+    color: rgb(253, 249, 249);
+    background-color: black;
+    border-radius: 4px 4px 8px 8px;
+    border-color: rgb(49, 49, 49);
+}
